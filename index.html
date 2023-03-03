@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+ <div class="container">
+    <div class="cal">
+        <form>
+            <div class="result">
+                <input type="text" id="res" name="res">
+            </div>
+            <div>
+                 <input type="button" class="btn" value="del" onclick="res.value= res.value.toString().slice(0,-1)">
+                <input type="button"  class="btn" value="clear" onclick="res.value=' '">
+                <input type="button"  class="btn" value="." onclick="res.value +='.'">
+                <input type="button"  class="btn" value="/" onclick="res.value +='/'">
+                           
+            </div>
+            <div>
+                <input type="button"  class="btn" value="7" onclick="res.value +='7'">
+                <input type="button"  class="btn" value="8" onclick="res.value +='8'">
+                <input type="button"  class="btn" value="9" onclick="res.value +='9'">
+                <input type="button"  class="btn" value="-" onclick="res.value +='-'">
+            </div>
+            <div>
+                <input type="button"  class="btn" value="4" onclick="res.value +='4'">
+                <input type="button"  class="btn" value="5" onclick="res.value +='5'">
+                <input type="button"  class="btn" value="6" onclick="res.value +='6'">
+                <input type="button"  class="btn" value="*" onclick="res.value +='*'">
+             </div>
+            <div>
+                <input type="button"  class="btn" value="1" onclick="res.value +='1'">
+                <input type="button"  class="btn" value="2" onclick="res.value +='2'">
+                <input type="button"  class="btn" value="3" onclick="res.value +='3'">
+                <input type="button"  class="btn" value="+" onclick="res.value +='+'">
+                 </div>
+            <div>
+                <input type="button"  class="btn" value="0" onclick="res.value +='0'">
+                <input type="button"  class="btn" value="00" onclick="res.value +='00'">
+                <input type="button"   value="ENTER" class="enter" onclick="res.value=eval(res.value.toString())">
+                
+                
+            </div>
+        </form>
+    </div>
+   </div> 
+</body>
+</html>
